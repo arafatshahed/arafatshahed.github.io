@@ -1,0 +1,81 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(315deg, #414c58, #27303a 74%);
+    color: white;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.container p {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.profile-image {
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.socials {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.lower-links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.lower-links a {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    border-radius: .5rem;
+}
+
+.lower-links a:hover {
+    background-color: gray;
+    transform: scale(1);
+}
