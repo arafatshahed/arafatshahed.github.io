@@ -1,62 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 30px 0;
-  position: relative;
-}
-
-.gallery {
-  width: 600px;
-  margin: auto;
-  border-radius: 3px;
-  overflow: hidden;
-  /* //position: relative; */
-}
-.img-c {
-  width: 200px;
-  height: 200px;
-  float: left;
-  position: relative;
-  overflow: hidden;
-}
-
-.img-w {
-  position: absolute;
-  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: transform ease-in-out 300ms;
+    background-image: linear-gradient(315deg, #414c58, #27303a 74%);
+    color: white;
 }
 
-.img-w img {
-  display: none;
+    
+
+.cards-wrapper {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
 }
 
-.img-c {
-    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+.cards-wrapper .vertical-card .card {
+  width: 300px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.img-c:hover .img-w {
-  transform: scale(1.08);
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+.cards-wrapper .vertical-card .card img {
+  width: 100%;
 }
 
-.img-c.active {
-  width: 100% !important;
-  height: 100% !important;
-  position: absolute;
-  z-index: 2;
-  /* //transform: translateX(-50%); */
+.cards-wrapper .vertical-card .card .info {
+  padding: 20px;
+  color: #181818;
 }
 
-.img-c.postactive {
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
+.cards-wrapper .vertical-card .card .info span {
+  font-weight: 600;
+  font-size: 25px;
 }
 
-.img-c.active.positioned {
-  left: 0 !important;
-  top: 0 !important;
-  transition-delay: 50ms;
+.cards-wrapper .vertical-card .card .info a {
+  font-weight: 200;
+  color: #181818;
+}
+
+.cards-wrapper .horizontal-card .card {
+  width: 700px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.cards-wrapper .horizontal-card .card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.cards-wrapper .horizontal-card .card .info {
+  padding: 20px;
+  color: #181818;
+}
+
+.cards-wrapper .horizontal-card .card .info span {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.cards-wrapper .horizontal-card .card .info a {
+  font-weight: 200;
+  color: #181818;
+}
+
+@media (max-width: 40em) {
+  .cards-wrapper .horizontal-card .card {
+    width: 300px;
+    flex-direction: column;
+  }
+  
+  .cards-wrapper .horizontal-card .card img {
+    width: 100%;
+  }
 }

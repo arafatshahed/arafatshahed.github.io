@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+    background-image: linear-gradient(315deg, #414c58, #27303a 74%);
+    color: white;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .header-text{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+  .image-gallery {
+    margin: 0 auto;
+    display: flex; /* Change this to flex */
+    flex-direction: column;
+  }
+  
+  
+  
+  .image-description {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .thumbnails {
+    display: flex;
+    gap: 20px;
+  justify-content: center;
+  align-items: center;
+  }
+  .thumbnail {
+    /* Adjusts for the gap between thumbnails */
+    display: block;
+  }
+
+  
+  .thumbnail-image {
+    width: 70px; /* Adjusts the thumbnail-image to fit its container */
+    height: 70px;
+    margin: 0 auto; /* Removes the vertical margin */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .thumbnail .thumbnail-image {
+    border: 2px solid transparent;  /* Set a transparent border to ensure layout remains consistent */
+}
+
+.thumbnail:hover .thumbnail-image {
+    border: 2px solid gray;  /* Gray border on hover */
+}
+
+.selected .thumbnail-image {
+    border: 2px solid red;  /* Red border for selected thumbnail */
+}
+
+
+  .main-content {
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.thumbnails, .main-content {
+  vertical-align: top; /* This is no longer effective, but kept for clarity */
+}
+
+.primary {
+    height: 400px;
+    /* display: flex;
+    align-items: center;  /* Vertically center the image */
+    /* justify-content: center; /* Horizontally center the image */
+   /*  overflow: hidden;  /* Important to hide oversized parts of the image */
+}
+
+.primary img {
+    max-height: 100%;
+    width: auto;
+}
