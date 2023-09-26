@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+    background-image: linear-gradient(315deg, #414c58, #27303a 74%);
+    color: white;
+}
+
+.cards-wrapper {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.cards-wrapper .vertical-card .card {
+  width: 300px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-wrapper .vertical-card .card img {
+  width: 100%;
+}
+
+.cards-wrapper .vertical-card .card .info {
+  padding: 20px;
+  color: #181818;
+}
+
+.cards-wrapper .vertical-card .card .info span {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.cards-wrapper .vertical-card .card .info a {
+  font-weight: 200;
+  color: #181818;
+}
+
+.cards-wrapper .horizontal-card .card {
+  width: 700px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.cards-wrapper .horizontal-card .card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.cards-wrapper .horizontal-card .card .info {
+  padding: 20px;
+  color: #181818;
+}
+
+.cards-wrapper .horizontal-card .card .info span {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.cards-wrapper .horizontal-card .card .info a {
+  font-weight: 200;
+  color: #181818;
+}
+
+@media (max-width: 40em) {
+  .cards-wrapper .horizontal-card .card {
+    width: 300px;
+    flex-direction: column;
+  }
+  
+  .cards-wrapper .horizontal-card .card img {
+    width: 100%;
+  }
+}
